@@ -184,3 +184,41 @@ $text-blue: #246198;
         margin-bottom: 55px;
       }
 }
+
+.about {
+  width: 100%;
+  background-color: $hinting-blue;
+  height: 700px;
+  border-radius: 10px;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 50px 100px;
+    }
+    &__title {
+      font-size: 1.2rem;
+      margin-top: 55px;
+      font-weight: 500;
+      color: $methyl-blue;
+    }
+    &__header {
+      font-size: 2.2rem;
+      margin-bottom: 55px;
+    }
+    &__content {
+      display: flex;
+      width: 100%;
+    }
+    &__img {
+      width: 600px;
+      height: 400px;
+      border-radius: 10px;
+      margin-right: 80px;
+    }
+    &__desc {
+      width: 630px;
+      font-size: 1.3rem;
+    }
+}
