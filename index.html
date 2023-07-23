@@ -8,20 +8,188 @@
 <body>
   <!--Nav Bar -->
   <nav class="navbar">
-    <header class="logo">Alta</header>
+    <a href="#home" id="navbar__logo">Alta</a>
+     <!-- Nav Bar Mobile -->
+     <div class="navbar__toggle" id="mobile">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>    
     <ul class="navbar__menu">
-      <li class="navbar__item"></li>
-      <li class="navbar__item"></li>
-      <li class="navbar__item"></li>
-      <li class="navbar__item"></li>
-      <li class="navbar__item"></li>
-      <li class="navbar__item"></li>
+      <li class="navbar__item">
+        <a href="#home" class="navbar__links" id="home-section">Home</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#services" class="navbar__links" id="services-section">Services</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#about" class="navbar__links" id="about-section">About</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#insurances" class="navbar__links" id="insurance-section">Insurances</a>
+      </li>
+      <li class="navbar__item">
+        <a href="#contact" class="navbar__links" id="contact-section">Contact</a>
+      </li>
     </ul>
+    <div class="navbar__button">
+      <span class="phonenumber">
+        
+      </span>
+      <button class="contact__ref">
+        <a href="#home">Contact</a>
+      </button>
+    </div>
   </nav>
   <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div class="hero__container">
+      <h2 class="hero__words">
+        Redefining Transportation
+      </h2>
+      <h3 class="inspiration__quote">
+        Unlock the world's limitless horizons, as we redefine the art of transportation
+      </h3>
+      <img src="" alt="" class="hero_image">
+    </div>
+    <div class="hero__info">
+      <div class="selling__point">
+        <span>Over</span>
+        <h1>10 Years</h1>
+        <p>Experience</p>
+      </div>
+      <div class="selling__point">
+        <span>Made</span>
+        <h1>10 Years</h1>
+        <p>Trips</p>
+      </div>
+      <p>Introducing 
+        <span>"Alta Medical Transportation,"</span> where compassionate care and reliable transport intertwine to ensure
+         your well-being is our top priority. With a steadfast commitment to excellence, we redefine medical transportation
+        by delivering seamless, safe, and comfortable journeys for all.
+      </p>
+    </div>
+  </div>
   <!-- Services -->
+  <section class="services" id="services">
+    <div class="service__item">
+        <h1 class="service__type">
+          Non-Emergency Medical Transportation
+        </h1>
+        <p class="service__info">
+          We provide non-emergency transportation services for patients who require transportation 
+          to and from medical appointments, outpatient procedures, rehabilitation sessions, or any other non-emergency medical visits.
+        </p>
+    </div>
+    <div class="service__item">
+      <h1 class="service__type">
+        Wheelchair Transportation
+      </h1>
+        <p class="service__info">
+          Our specialized vehicles are equipped to safely transport patients who rely on wheelchairs for mobility. 
+          Our trained staff ensures secure and comfortable transfers to and from the vehicle, prioritizing the individual's safety and well-being.
+        </p>
+    </div>
+    <div class="service__item">
+      <h1 class="service__type">
+        Insurance Coordination
+      </h1>
+      <p class="service__info">
+        We assist patients in navigating insurance requirements and coordinating transportation coverage, making the process seamless and stress-free.
+      </p>
+    </div>
+  </section>
   <!-- About -->
+  <section class="about" id="about">
+    <span class="about__title"> About </span>
+    <h1 class="about__header">About</h1>
+    <p class="about__desc">
+      At VitalCare, we understand that each trip is a vital link in your healthcare journey. Our team of highly trained professionals,
+      including skilled drivers and experienced medical attendants, work harmoniously to provide 
+      you with the utmost care and support throughout your transportation experience. Your health, comfort, and dignity are our unwavering focus.
+    </p>
+    <div class="insurance__msg">
+
+    </div>
+  </section>
   <!-- Insurances -->
+  <section class="insurances" id="insurances">
+    <h1 class="insurance__header">Insurances</h1>
+    <div class="insurance__info">
+      <img src="" alt="" class="insurance__img">
+      <h2 class="insurance__name">
+        MAS
+      </h2>
+    </div>
+    <div class="insurance__info">
+      <img src="" alt="" class="insurance__img">
+      <h2 class="insurance__name">
+        NMT
+      </h2>
+    </div>
+    <div class="insurance__info">
+      <img src="" alt="" class="insurance__img">
+      <h2 class="insurance__name">
+        ELDER
+      </h2>
+    </div>
+    <div class="insurance__info">
+      <img src="" alt="" class="insurance__img">
+      <h2 class="insurance_name">
+        FIDELIS
+      </h2>
+    </div>
+    <div class="insurance__info">
+      <img src="" alt="" class="insurance__img">
+      <h2 class="insurance__name"></h2>
+    </div>
+    <div class="insurance__info">
+      <img src="" alt="" class="insurance__img">
+      <h2 class="insurance__name">
+        MODIVCARE
+      </h2>
+    </div>
+    <div class="insurance__info">
+      <img src="" alt="" class="insurance__img">
+      <h2 class="insurance__name">
+        SENTRY
+      </h2>
+    </div>  
+  </section>
   <!-- Contact Form -->
+  <section class="contact" id="contact">
+    <h1 class="contact__header">Contact Us Today</h1>
+    <div class="contact__container">
+      map will go here
+      <form action="" class="contact__form">
+        <label for="fname">Full name:</label>
+        <input type="text" id="fname" name="fname"/>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email"/>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"/>
+        <label for="trip__date">Date:</label>
+        <input type="datetime" id="trip__date" name="date"/>
+        <label>Wheelchair:</label>
+        <label>
+          <input type="radio" name="choice-radio">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="choice-radio">
+          No
+        </label>
+      </form>
+    </div>
+  </section>
 </body>
+<footer>
+  <a href="#home" class="footer__logo">Alta Medical Transportation</a>
+  <p>© 2023Alta™. All Rights Reserved.</p>
+  <div class="footer__items">
+    <a href="#about" class="footer__sect">About</a>
+    <a href="#contact" class="footer__sect">Contact</a>
+    <a href="#home" class="footer__sect">Home</a>
+  </div>
+</footer>
 </html>
