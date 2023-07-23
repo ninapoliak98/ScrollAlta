@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  background: #cfd8dc;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 80px;
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.navbar__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 100px;
+}
+.navbar__container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.navbar__logo {
+  color: #000000;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: bold;
+  justify-content: center;
+}
+.navbar__menu {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+.navbar__links {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+.navbar__links:hover {
+  color: #0073a9;
+}
+.navbar__button {
+  align-items: center;
+  justify-content: center;
+}
+.navbar__button a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.navbar__phone {
+  color: #000000;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.navbar__contact-ref {
+  border: none;
+  outline: none;
+  background-color: #70a9c4;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+}
+.navbar__contact-ref:hover {
+  border: 2px solid #ffffff;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 100px;
+  align-items: center;
+  justify-content: center;
+}
+.hero__words {
+  color: #0073a9;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.hero__quote {
+  font-size: 2.2rem;
+}
+.hero__image {
+  width: 100%;
+  height: 600px;
+  border-radius: 10px;
+  margin-top: 25px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.hero__container {
+  text-align: center;
+  width: 100%;
+}
+.hero__info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.hero__point {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background: #cfd8dc;
+  height: 200px;
+  width: 250px;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.hero__point span {
+  font-size: 1.2rem;
+  color: #0073a9;
+  margin-left: 50px;
+}
+.hero__point h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+.hero__point p {
+  font-size: 1.2rem;
+  text-align: end;
+  margin-right: 60px;
+  font-weight: 500;
+}
+.hero__desc {
+  font-size: 1.25rem;
+  width: 575px;
+}
+.hero__desc span {
+  color: #246198;
+  font-weight: 600;
+}/*# sourceMappingURL=styles.css.map */

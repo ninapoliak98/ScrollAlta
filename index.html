@@ -4,42 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alta</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!--Nav Bar -->
   <nav class="navbar">
-    <a href="#home" id="navbar__logo">Alta</a>
-     <!-- Nav Bar Mobile -->
-     <div class="navbar__toggle" id="mobile">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>    
-    <ul class="navbar__menu">
-      <li class="navbar__item">
-        <a href="#home" class="navbar__links" id="home-section">Home</a>
-      </li>
-      <li class="navbar__item">
-        <a href="#services" class="navbar__links" id="services-section">Services</a>
-      </li>
-      <li class="navbar__item">
-        <a href="#about" class="navbar__links" id="about-section">About</a>
-      </li>
-      <li class="navbar__item">
-        <a href="#insurances" class="navbar__links" id="insurance-section">Insurances</a>
-      </li>
-      <li class="navbar__item">
-        <a href="#contact" class="navbar__links" id="contact-section">Contact</a>
-      </li>
-    </ul>
-    <div class="navbar__button">
-      <span class="phonenumber">
-        
-      </span>
-      <button class="contact__ref">
-        <a href="#home">Contact</a>
-      </button>
+    <div class="navbar__wrapper">
+      <div class="navbar__container">
+        <a href="#home" class="navbar__logo">Alta</a>
+        <!-- Nav Bar Mobile -->
+        <div class="navbar__toggle" id="mobile">
+         <span class="navbar__bar"></span>
+         <span class="navbar__bar"></span>
+         <span class="navbar__bar"></span>
+       </div>    
+       <ul class="navbar__menu">
+         <li class="navbar__item">
+           <a href="#home" class="navbar__links" id="home-section">Home</a>
+         </li>
+         <li class="navbar__item">
+           <a href="#services" class="navbar__links" id="services-section">Services</a>
+         </li>
+         <li class="navbar__item">
+           <a href="#about" class="navbar__links" id="about-section">About</a>
+         </li>
+         <li class="navbar__item">
+           <a href="#insurances" class="navbar__links" id="insurance-section">Insurances</a>
+         </li>
+         <li class="navbar__item">
+           <a href="#contact" class="navbar__links" id="contact-section">Contact</a>
+         </li>
+       </ul>
+      </div>
+      <div class="navbar__button">
+        <span class="navbar__phone">
+          Call 1-718-897-2582
+        </span>
+        <button class="navbar__contact-ref">
+          <a href="#contact">Contact</a>
+        </button>
+      </div>
     </div>
+    
   </nav>
   <!-- Hero Section -->
   <div class="hero" id="home">
@@ -47,23 +54,25 @@
       <h2 class="hero__words">
         Redefining Transportation
       </h2>
-      <h3 class="inspiration__quote">
+      <h3 class="hero__quote">
         Unlock the world's limitless horizons, as we redefine the art of transportation
       </h3>
-      <img src="" alt="" class="hero_image">
+      <img src="/statics/hero-image.jpg" alt="" class="hero__image">
     </div>
     <div class="hero__info">
-      <div class="selling__point">
-        <span>Over</span>
-        <h1>10 Years</h1>
-        <p>Experience</p>
-      </div>
-      <div class="selling__point">
-        <span>Made</span>
-        <h1>10 Years</h1>
-        <p>Trips</p>
-      </div>
-      <p>Introducing 
+      
+        <div class="hero__point">
+          <span>Over</span>
+          <h1>10 Years</h1>
+          <p>Experience</p>
+        </div>
+        <div class="hero__point">
+          <span>Made</span>
+          <h1>1.2 M+</h1>
+          <p>Trips</p>
+        </div>
+  
+      <p class="hero__desc">Introducing 
         <span>"Alta Medical Transportation,"</span> where compassionate care and reliable transport intertwine to ensure
          your well-being is our top priority. With a steadfast commitment to excellence, we redefine medical transportation
         by delivering seamless, safe, and comfortable journeys for all.
@@ -72,29 +81,29 @@
   </div>
   <!-- Services -->
   <section class="services" id="services">
-    <div class="service__item">
-        <h1 class="service__type">
+    <div class="services__item">
+        <h1 class="services__type">
           Non-Emergency Medical Transportation
         </h1>
-        <p class="service__info">
+        <p class="services__info">
           We provide non-emergency transportation services for patients who require transportation 
           to and from medical appointments, outpatient procedures, rehabilitation sessions, or any other non-emergency medical visits.
         </p>
     </div>
-    <div class="service__item">
-      <h1 class="service__type">
+    <div class="services__item">
+      <h1 class="services__type">
         Wheelchair Transportation
       </h1>
-        <p class="service__info">
+        <p class="services__info">
           Our specialized vehicles are equipped to safely transport patients who rely on wheelchairs for mobility. 
           Our trained staff ensures secure and comfortable transfers to and from the vehicle, prioritizing the individual's safety and well-being.
         </p>
     </div>
-    <div class="service__item">
-      <h1 class="service__type">
+    <div class="services__item">
+      <h1 class="services__type">
         Insurance Coordination
       </h1>
-      <p class="service__info">
+      <p class="services__info">
         We assist patients in navigating insurance requirements and coordinating transportation coverage, making the process seamless and stress-free.
       </p>
     </div>
@@ -108,12 +117,9 @@
       including skilled drivers and experienced medical attendants, work harmoniously to provide 
       you with the utmost care and support throughout your transportation experience. Your health, comfort, and dignity are our unwavering focus.
     </p>
-    <div class="insurance__msg">
-
-    </div>
   </section>
   <!-- Insurances -->
-  <section class="insurances" id="insurances">
+  <section class="insurance" id="insurances">
     <h1 class="insurance__header">Insurances</h1>
     <div class="insurance__info">
       <img src="" alt="" class="insurance__img">
@@ -135,7 +141,7 @@
     </div>
     <div class="insurance__info">
       <img src="" alt="" class="insurance__img">
-      <h2 class="insurance_name">
+      <h2 class="insurance__name">
         FIDELIS
       </h2>
     </div>
@@ -155,6 +161,9 @@
         SENTRY
       </h2>
     </div>  
+    <div class="insurance__msg">
+
+    </div>
   </section>
   <!-- Contact Form -->
   <section class="contact" id="contact">
@@ -182,14 +191,14 @@
       </form>
     </div>
   </section>
+  <footer class="footer" id="footer">
+    <a href="#home" class="footer__logo">Alta Medical Transportation</a>
+    <p>© 2023Alta™. All Rights Reserved.</p>
+    <div class="footer__items">
+      <a href="#about" class="footer__sect">About</a>
+      <a href="#contact" class="footer__sect">Contact</a>
+      <a href="#home" class="footer__sect">Home</a>
+    </div>
+  </footer>
 </body>
-<footer>
-  <a href="#home" class="footer__logo">Alta Medical Transportation</a>
-  <p>© 2023Alta™. All Rights Reserved.</p>
-  <div class="footer__items">
-    <a href="#about" class="footer__sect">About</a>
-    <a href="#contact" class="footer__sect">Contact</a>
-    <a href="#home" class="footer__sect">Home</a>
-  </div>
-</footer>
 </html>
