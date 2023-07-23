@@ -150,3 +150,37 @@ $text-blue: #246198;
         }
       }
 }
+.services {
+  margin: 50px 100px;
+  display: flex;
+  flex-direction: column;
+      &__header {
+        font-size: 2.5rem;
+        color: $methyl-blue;
+        text-align: center;
+        margin-bottom: 85px;
+      }
+      &__item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 145px;
+        &:nth-child(3) {
+          flex-direction: row-reverse;
+        }
+      }
+      &__content {
+        width: 700px;
+      }
+      &__img {
+        width: 550px;
+        height: 320px;
+        border-radius: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      }
+      &__info {
+        font-size: 1.25rem;
+      }
+      &__type {
+        margin-bottom: 55px;
+      }
+}
