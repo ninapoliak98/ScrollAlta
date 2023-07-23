@@ -216,4 +216,57 @@
 .about__desc {
   width: 630px;
   font-size: 1.3rem;
+}
+
+.insurance {
+  margin: 50px 100px;
+}
+.insurance__header {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0073a9;
+  margin-bottom: 85px;
+}
+.insurance__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-gap: 1.7rem;
+  justify-content: center;
+  align-items: center;
+}
+.insurance__info {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 250px;
+  background-color: #cfd8dc;
+  border-radius: 10px;
+  gap: 1.75rem;
+  transition: all 0.5s ease;
+  align-items: center;
+  justify-content: center;
+}
+.insurance__info:hover {
+  transform: scale(110%);
+  background-color: rgba(255, 159, 0, 0.25);
+  border: 1px solid #FF9F00;
+}
+.insurance__name {
+  text-align: center;
+}
+.insurance__msg {
+  width: 100%;
+  background-color: rgba(255, 159, 0, 0.25);
+  margin-top: 85px;
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 3px solid #FF9F00;
+}
+.insurance__announcment {
+  color: #432A00;
+  font-size: 1.2rem;
+}
+.insurance__img {
+  width: 113px;
+  height: 55px;
 }/*# sourceMappingURL=styles.css.map */

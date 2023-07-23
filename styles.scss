@@ -4,6 +4,8 @@ $hinting-blue: #cfd8dc;
 $white: #ffffff;
 $black: #000000;
 $text-blue: #246198;
+$yellow: #FF9F00; 
+$insurance-text: #432A00;
 
 * {
   box-sizing: border-box;
@@ -221,4 +223,56 @@ $text-blue: #246198;
       width: 630px;
       font-size: 1.3rem;
     }
+}
+.insurance {
+  margin: 50px 100px;
+  &__header {
+    text-align: center;
+    font-size: 2.5rem;
+    color: $methyl-blue;
+    margin-bottom: 85px;
+  }
+  &__wrapper {
+   display: grid;
+   grid-template-columns: repeat(3, 250px);
+   grid-gap: 1.7rem;
+   justify-content: center;
+   align-items: center;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    height: 180px;
+    width: 250px;
+    background-color: $hinting-blue;
+    border-radius: 10px;
+    gap: 1.75rem;
+    transition: all .5s ease;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      transform: scale(110%);
+      background-color: rgb($yellow, 25%);
+      border: 1px solid $yellow;
+    }
+  }
+  &__name {
+    text-align: center;
+  }
+  &__msg {
+    width: 100%;
+    background-color: rgb($yellow, 25%);
+    margin-top: 85px;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 3px solid $yellow;
+  }
+  &__announcment {
+    color: $insurance-text;
+    font-size: 1.2rem;
+  }
+  &__img {
+    width: 113px;
+    height: 55px;
+  }
 }
