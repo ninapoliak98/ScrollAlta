@@ -164,6 +164,7 @@
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 300;
+  cursor: pointer;
 }
 .navbar__contact-ref {
   border: none;
@@ -196,7 +197,8 @@
 .hero__image {
   width: 100%;
   min-width: 200px;
-  min-height: 600px;
+  min-height: 500px;
+  max-height: 550px;
   border-radius: 8px;
   margin-top: 25px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -258,6 +260,7 @@
 .services {
   display: flex;
   flex-direction: column;
+  transition: all 3s ease;
 }
 .services__header {
   font-size: 2.5rem;
@@ -319,6 +322,10 @@
 .services__type {
   text-align: center;
   margin-bottom: 55px;
+}
+.services.scroll {
+  opacity: 100%;
+  transition: all 3s ease;
 }
 
 .about {
@@ -577,4 +584,45 @@
 }
 .scale-in-ver-top {
   animation: scale-in-ver-top 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes wobble-hor-bottom {
+  0%, 100% {
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+.wobble-hor-bottom:hover {
+  animation: wobble-hor-bottom 0.8s both;
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide-in-right {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.scrolled {
+  opacity: 0;
 }/*# sourceMappingURL=styles.css.map */
