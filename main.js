@@ -1,8 +1,8 @@
-const menuToggle = document.querySelector(".navbar__toggle");
-const menuNav = document.querySelector(".navbar__menu");
-const menuLinks = document.querySelector(".navbar__links");
+const dotEnv = require('dotenv').config({path: './.env'});
+console.log(process.env.ID);
+const menuToggle = document.querySelector(".navbar__toggle")
+const menuNav = document.querySelector(".navbar__menu")
 const contactForm = document.querySelector(".contact__form")
- 
 
 const mobileMenu = () => {
   menuToggle.classList.toggle("is-active")
@@ -21,13 +21,15 @@ const hideMobileMenu = () => {
 menuNav.addEventListener('click', hideMobileMenu)
 
 const sendFormData = (event) => {
-  event.preventDefault();
+    event.preventDefault();
       emailjs.sendForm('service_w126s1c', 'template_wqms6to', contactForm)
           .then(function() {
               console.log('SUCCESS!')
           }, function(error) {
               console.log('FAILED...', error)
           });
+
+          event.target.reset();
 }
 
 contactForm.addEventListener('submit', sendFormData)
