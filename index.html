@@ -6,6 +6,12 @@
   <title>Alta</title>
   <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init('fWtNBEUpdDyGOADX2');
+        })();
+    </script>
 </head>
 <body>
   <!--Nav Bar -->
@@ -19,7 +25,7 @@
          <span class="navbar__bar"></span>
          <span class="navbar__bar"></span>
        </div>    
-       <ul class="navbar__menu">
+       <ul class="navbar__menu scale-in-ver-top">
          <li class="navbar__item">
            <a href="#home" class="navbar__links" id="home-section">Home</a>
          </li>
@@ -48,9 +54,9 @@
     </div>
     
   </nav>
+  <div class="body__wrapper">
   <!-- Hero Section -->
   <div class="hero" id="home">
-    <div class="hero__container">
       <h2 class="hero__words">
         Redefining Transportation
       </h2>
@@ -77,7 +83,6 @@
          your well-being is our top priority. With a steadfast commitment to excellence, we redefine medical transportation
         by delivering seamless, safe, and comfortable journeys for all.
       </p>
-    </div>
   </div>
   <!-- Services -->
   <section class="services" id="services">
@@ -120,17 +125,13 @@
   </section>
   <!-- About -->
   <section class="about" id="about">
-    <div class="about__wrapper">
         <span class="about__title"> About </span>
         <h1 class="about__header">About</h1>
         <div class="about__content">
             <img class="about__img" src="/statics/about.jpeg" alt="">
             <p class="about__desc">
-              At Alta Care Transportation, we understand that each trip is a vital link in your healthcare journey. Our team of highly trained professionals,
-              including skilled drivers and experienced medical attendants, work harmoniously to provide 
-              you with the utmost care and support throughout your transportation experience. Your health, comfort, and dignity are our unwavering focus.
-            </p>
-        </div>
+              At Alta Care Transportation, we understand that each trip is a vital link in your healthcare journey. Our team of highly trained professionals, including skilled drivers and experienced medical attendants, work harmoniously to provide you with the utmost care and support throughout your transportation experience. Your health, comfort, and dignity are our unwavering focus. make this longer
+           </p>
     </div>
  
   </section>
@@ -188,28 +189,30 @@
   <section class="contact" id="contact">
     <h1 class="contact__header">Contact Us Today</h1>
     <div class="contact__container">
-      map will go here
+      
       <form action="" class="contact__form">
-        <label for="fname">Full name:</label>
+        <label for="fname">Full name</label>
         <input type="text" id="fname" name="fname"/>
-        <label for="email">Email:</label>
+        <label for="email">Email</label>
         <input type="text" id="email" name="email"/>
-        <label for="phone">Phone:</label>
+        <label for="phone">Phone</label>
         <input type="text" id="phone" name="phone"/>
-        <label for="trip__date">Date:</label>
-        <input type="datetime" id="trip__date" name="date"/>
-        <label>Wheelchair:</label>
-        <label>
-          <input type="radio" name="choice-radio">
+        <label for="trip__date">Date</label>
+        <input type="date" id="trip__date" name="date"/>
+        <label>Wheelchair</label>
+        <label class="contact__radio-label">
+          <input type="radio" name="choice-radio" class="contact__radio">
           Yes
         </label>
-        <label>
-          <input type="radio" name="choice-radio">
+        <label class="contact__radio-label">
+          <input type="radio" name="choice-radio" class="contact__radio">
           No
-        </label>
+        </label >
+        <button class="contact__button">Submit</button>
       </form>
     </div>
   </section>
+</div>
   <footer class="footer" id="footer">
     <a href="#home" class="footer__logo">Alta Medical Transportation</a>
     <p>© 2023Alta™. All Rights Reserved.</p>
@@ -219,5 +222,6 @@
       <a href="#home" class="footer__sect">Home</a>
     </div>
   </footer>
+  <script src="main.js"></script>
 </body>
 </html>
