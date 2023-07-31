@@ -482,6 +482,7 @@
   border-radius: 8px;
   background-color: rgba(112, 169, 196, 0.63);
   border: 1px solid #0073a9;
+  padding: 0px 10px;
 }
 .contact__form label {
   color: #0073a9;
