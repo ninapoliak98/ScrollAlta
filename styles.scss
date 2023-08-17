@@ -80,6 +80,7 @@ html {
     }
   }
 
+
   &__bar {
     display: block;
     border: 3px solid black;
@@ -181,7 +182,41 @@ html {
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 300;
+    cursor: pointer;
 
+
+    @media screen and (max-width: $medium) {
+      display: none;
+    }
+
+    @media screen and (max-width: $small) {
+      display: block;
+      color: $methyl-blue;
+      font-weight: 600;
+    }
+
+  }
+
+  &__phone-burger {
+    color: $black;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 300;
+    cursor: pointer;
+
+    @media screen and (min-width: 1052px) {
+      display: none;
+    }
+
+    @media screen and (max-width: $medium) {
+      display: none;
+    }
+
+    @media screen and (max-width: $small) {
+      display: block;
+      color: $methyl-blue;
+      font-weight: 600;
+    }
   }
 
   &__contact-ref {
@@ -333,18 +368,18 @@ html {
   }
 
   &__img {
-    min-width: 550px;
+    width: 550px;
     min-height: 320px;
     border-radius: 8px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
     @media screen and (max-width: $small) {
-      width: 300px;
+      width: 375px;
       height: 220px;
     }
 
     @media screen and (max-width: $medium) {
-      max-width: 350px;
+      max-width: 375px;
       max-height: 220px;
     }
   }
