@@ -32,35 +32,3 @@ const sendFormData = (event) => {
 }
 
 contactForm.addEventListener('submit', sendFormData)
-
-// function getOffset(el) {
-//   const rect = el.getBoundingClientRect();
-//   return {
-//     top: rect.top + window.scrollY,
-//     bottom: rect.bottom - window.scrollY
-//   };
-// }
-// const elementInView = () => {
-//   return window.pageYOffset; 
-// };
-// const displayScrollElement = () => {
-//   scrollElements.classList.add('slide-in-right');
-// }
-// const hideScrollElement = () => {
-//   scrollElements.classList.remove('slide-in-right');
-// }
-// const handleScrollAnimation = () => {
-//   if (elementInView() >= getOffset(scrollElements).top - 500) {
-//       console.log("scroll")
-//       displayScrollElement();
-//   } 
-//   if(elementInView() < getOffset(scrollElements).top) {
-//     console.log("done scroll")
-//     hideScrollElement();
-//   }
-// }
-// window.addEventListener('scroll', () => {
-//   console.log(elementInView())
-//   console.log(getOffset(scrollElements))
-//   handleScrollAnimation();
-// })
