@@ -262,9 +262,9 @@
   justify-content: space-between;
   padding: 50px;
 }
-@media screen and (max-width: 1063px) {
+@media screen and (max-width: 1400px) {
   .hero__info {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 1.75rem;
   }
 }

@@ -8,6 +8,7 @@ $yellow: #FF9F00;
 $insurance-text: #432A00;
 $small: 626px;
 $medium: 1063px;
+$large: 1400px;
 
 * {
   box-sizing: border-box;
@@ -281,8 +282,8 @@ html {
     justify-content: space-between;
     padding: 50px;
 
-    @media screen and (max-width: $medium) {
-      flex-direction: column;
+    @media screen and (max-width: $large) {
+      flex-direction: column-reverse;
       gap: 1.75rem;
     }
 
